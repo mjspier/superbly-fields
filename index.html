@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js" ></script>
+<script type="text/javascript" src="superbly-fields.min.js" ></script>
+<link rel="stylesheet" type="text/css" href="superbly-fields.css">
+ <script type="text/javascript">
+        $(function() {
+            var carTags = ['Alfa Romeo','Aston Martin','Audi','Bentley','Bugatti','BMW','Citroen','Cadillac','Chevrolet','Dodge','Daewoo','Ferrari','Ford','Fiat','Honda','Hyundai','Jaguar','Jeep','Kia','Lada','Lexus','Lotus','Maserati','Mazda','Mercedes','Nissan','Opel','Peugeot','Porsche','Rover','Renault','Suzuki','Subaru','Seat','Toyota','Volvo','Vauxhall','VW'];
+
+            // Initialize Demo 1
+            $("#suggestfield").superblySuggestField({
+                suggestions: carTags
+            });
+            
+             $("#numberfield").superblyNumberField();
+             $("#selectfield").superblySelectField(carTags);
+
+     	});
+</script>
+</head>
+<body>
+<h2>superbly fields demo</h2>
+<div>
+	
+	<label>number field demo:</label>
+	<div>
+	<input id="numberfield" type="text">
+	</div>
+	<br/>
+	<label>suggest field demo:</label>
+	<input id="suggestfield" type="text"><br/>	
+	<br/>
+	<label>drop down demo:</label>
+	<div>
+	<select id="selectfield"></select>
+	<br/>	
+	</div>
+	<br/>
+
+</div>
+</body>
+</html>

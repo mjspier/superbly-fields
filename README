@@ -1,0 +1,28 @@
+superbly fields 
+http://www.superbly.ch
+
+Copyright 2011, Manuel Spierenburg
+Dual licensed under the MIT or GPL Version 2 licenses.
+http://www.superbly.ch/licenses/mit-license.txt
+http://www.superbly.ch/licenses/gpl-2.0.txt
+
+#############
+# changelog #
+#############
+version 0.1
+ - initial version
+ 
+##############
+# descrption #
+##############
+
+collection of different fields for html forms.
+
+suggest field:
+- makes suggestions according to given array
+
+number field:
+- only allows number input
+
+select field:
+- fill html select box with array

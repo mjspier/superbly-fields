@@ -1,0 +1,39 @@
+input{
+	border: solid 1px #7aa9e3;
+	background-color: #FFFFFF;
+}
+
+
+.superblySuggestItems{
+ 	position: absolute;
+    margin: 0px;
+    padding: 0px;
+}   
+   
+.superblySuggestItems .superblySuggestItem{
+    font-size:11px;
+	font-family: Verdana, Arial, Georgia, Helvetica, sans-serif;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+	background-color: #bbcee4;
+    border: solid 1px #bbcee4;
+	list-style: none;
+	float: none;
+    color: #000000;
+}
+   
+.superblySuggestItems .superblySuggestItem:hover{
+   	cursor: pointer;
+    border: solid 1px #181B38;
+}
+   
+.superblySuggestItems .selected{
+	background-color: #7aa9e3;
+    border: solid 1px #7aa9e3;
+}
+
+select{
+	border: solid 1px #7aa9e3;
+	background-color: #FFFFFF;
+}
