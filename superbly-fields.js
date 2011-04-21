@@ -13,7 +13,7 @@
     $.fn.superblySuggestField = function(userOptions) {
         var settings = {
             showSuggestionsNumber:10,
-            suggestions:[],
+            suggestions:[]
         };
 
         if(userOptions) {
