@@ -13,7 +13,7 @@
     $.fn.superblySuggestField = function(userOptions) {
         var settings = {
             showSuggestionsNumber:10,
-            suggestions:[],
+            suggestions:[]
         };
 
         if(userOptions) {
@@ -39,7 +39,7 @@
         
 		//prepare needed vars
 		var currentValue = null;
-		var cuttentItem = null;
+		var currentItem = null;
 		var selectedIndex = null;
 		var hoverSuggestItems = false;
 		var suggestionstmp = suggestions.slice();
@@ -56,15 +56,19 @@
 		});
 	
 	
-   		suggestField.keyup(function(e){
+   		suggestField.keydown(function(e){
 			if(e.keyCode == keyMap.downArrow) {			
 				selectDown();
+				e.preventDefault();
 			}else if(e.keyCode == keyMap.upArrow) {
 				selectUp()
 			}else if(e.keyCode == keyMap.enter || e.keyCode == keyMap.tab) {
 				if(currentItem != null){
 					suggestField.val(currentItem);
 					suggestField.next('.superblySuggestItems').css('display', 'none');
+				}
+				if(e.keyCode == keyMap.enter){
+					e.preventDefault();
 				}
 			}else{
 				suggest($(this).val());
